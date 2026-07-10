@@ -1,0 +1,23 @@
+# Ignore frontend dependencies
+**/node_modules/
+**/build/
+.pnp
+.pnp.js
+
+# Ignore backend environments and caches
+**/.venv/
+**/venv/
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.pyd
+**/.pytest_cache/
+
+# Ignore local environment variables and OS junk
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.DS_Store
+Thumbs.db
