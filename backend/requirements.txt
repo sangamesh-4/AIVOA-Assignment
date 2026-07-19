@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+langgraph
+groq
+langchain-groq
+python-multipart
