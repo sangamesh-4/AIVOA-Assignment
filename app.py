@@ -24,14 +24,17 @@ st.set_page_config(
 )
 
 # Hide default Streamlit style borders to make it look like a native application
-st.markdown("""
+st.markdown(
+    body="""
     <style>
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
     header {visibility: hidden;}
     div.block-container {padding-top: 0rem; padding-bottom: 0rem; padding-left: 1rem; padding-right: 1rem;}
     </style>
-""", unsafe_html=True)
+    """, 
+    unsafe_html=True
+)
 
 # 3. Stream your local working UI inside the secure browser window frame
 # (Maps directly to your local running React port instance)
