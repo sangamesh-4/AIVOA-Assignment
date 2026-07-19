@@ -33,11 +33,10 @@ st.markdown(
     div.block-container {padding-top: 0rem; padding-bottom: 0rem; padding-left: 1rem; padding-right: 1rem;}
     </style>
     """, 
-    unsafe_html=True
+    unsafe_allow_html=True
 )
 
 # 3. Stream your local working UI inside the secure browser window frame
-# (Maps directly to your local running React port instance)
 target_url = "http://localhost:3000"
 
 st.components.v1.iframe(src=target_url, height=900, scrolling=True)
